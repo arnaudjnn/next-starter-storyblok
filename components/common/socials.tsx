@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { FaFacebook, FaLinkedin, FaTwitter, FaPinterest, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { useTranslation } from 'lib/hooks/useTranslation';
 
-const siteName = "https://starter.io"
+const siteName = process.env.VERCEL_URL
 
 type IProps = {
   title: string;

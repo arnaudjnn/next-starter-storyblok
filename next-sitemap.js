@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://starter.io',
+  siteUrl: process.env.VERCEL_URL,
   generateRobotsTxt: true,
   sitemapSize: 7000
 }

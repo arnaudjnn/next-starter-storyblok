@@ -6,7 +6,7 @@ export default function ArticleSeo({ article }) {
       openGraph={{
         title: article.content.title,
         description: article.content.description,
-        url: `https://www.wyno.io/blog/${article.slug}`,
+        url: `${process.env.VERCEL_URL}/blog/${article.slug}`,
         type: 'article',
         article: {
           publishedTime: article.published_at,

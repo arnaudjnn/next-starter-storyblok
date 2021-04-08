@@ -4,10 +4,8 @@ import { Container } from 'components/common/container';
 import { LogoType } from 'components/common/logos';
 import { ColorModeSwitcher } from 'components/common/color-mode-switcher';
 import LangSelect from 'components/common/lang-select';
-import { useTranslation } from 'lib/hooks/useTranslation';
 
 export default function Footer({ copyright, text, nav, layout }) {
-  const { t } = useTranslation()
 
   return (
     <footer>
@@ -39,11 +37,7 @@ export default function Footer({ copyright, text, nav, layout }) {
         <Grid gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }} gridGap="5" py="5" borderTop="1px solid" borderColor="rgb(255, 255, 255, .4)">
           <Flex alignItems="center">
             <Text fontSize="md" display="flex" flexDirection={{ base: 'column', lg: 'row' }} textAlign="center">
-              <span>{copyright}</span>
-              <Box as="span" mx="2" display={{ base: 'none', lg: 'block' }}>•</Box>
-              <NextLink href="/privacy">
-                <Link>{t['privacy']}</Link>
-              </NextLink>
+              {copyright}
             </Text>
           </Flex>
           <Flex alignItems="center" justifyContent={{ base: 'center', lg: 'flex-end' }}>

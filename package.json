@@ -1,7 +1,7 @@
 {
-  "name": "@wyno/website",
+  "name": "next-starter-storyblok",
   "private": true,
-  "description": "Marketing website for Wyno",
+  "description": "Starter template for marketing website",
   "license": "MIT",
   "version": "0.1.0",
   "author": "@arnaudjnn",
@@ -14,7 +14,7 @@
     "deploy": "yarn build && yarn export"
   },
   "dependencies": {
-    "@chakra-ui/react": "1.3.4",
+    "@chakra-ui/react": "^1.5.0",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "axios": "^0.21.1",
