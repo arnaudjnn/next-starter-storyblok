@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://wyno.io
+Host: undefined
 
 # Sitemaps
-Sitemap: https://wyno.io/sitemap.xml
+Sitemap: undefined/sitemap.xml
