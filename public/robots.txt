@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://wyno.io
+
+# Sitemaps
+Sitemap: https://wyno.io/sitemap.xml
